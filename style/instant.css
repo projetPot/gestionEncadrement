@@ -1,0 +1,135 @@
+/* body {
+width : 100%;
+height : 100%;
+} */
+#spa {
+
+border-radius : 8px 8px 0 8px;
+background-color : #fff;
+
+}
+.spa-slider-Instant {
+
+cursor : pointer;
+border-radius : 8px 0 0 0;
+background-color : aqua;
+}
+
+#spaInstant{
+
+background-color: white;
+height: 400px;
+width: 300px;
+border: 1px solid black;
+}
+
+.ss:hover
+{
+background-image:linear-gradient(#3399cc 20%,#d5ebf1 120%);
+}
+
+.ss{
+  width:20%;
+  background:#3399cc;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+form[name="s"]{
+  background-color:rgb(238, 236, 236);
+  padding:6% 4%;
+
+  
+}
+
+.textInstant{
+border-radius: 0px;
+
+max-height: 44px;
+max-width: 270px;
+
+min-height: 44px;
+min-width: 270px;
+
+
+text-align: justify;
+border-radius: 5px;
+}
+
+.userSend{
+border: 2px solid #BBB0FB;
+background-color:rgb(238, 236, 236);
+float: left;
+padding-right: 2px;
+padding-left: 10px;
+padding-top: 5px;
+margin-bottom: -20px;
+}
+
+#triangle{
+  width:10;
+  border-top: 12x solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #3399cc;
+  border-left: 12px solid transparent;
+  margin: 0 auto;
+}
+
+.contentSend{
+margin-left: 65px;
+width: 70%;
+border: 2px solid skyblue;
+margin-top: 3px;
+margin-bottom: -20px;
+border-radius: 5px;
+box-shadow: 2px 1px 0px rgb(187, 176, 251);
+}
+
+.displayInstantInstant{
+overflow: scroll;
+height: 50%;
+width: 100%;
+padding: 10px 5px 0px 5px;
+font-weight: bold;
+}
+
+
+.mini_bloc2 {
+    width: 250px;
+    min-height: 100px;
+    border-radius: 0px 0px 5px 5px;
+    
+    background-color: #EEECEC;
+   position: fixed;
+   left: 10px;
+   top: 450px;
+	border: 1px solid blue;
+}
+
+#nom{ 
+display: block; 
+height: 380px; 
+overflow: hidden;
+background-color: white;
+}
+
+#nom, #ouv{
+border-radius: 7px 7px 0px 0px; 
+border: 3px groove blue; 
+position: fixed;
+bottom: 1px;
+right: 350px;
+cursor: pointer;
+}
+
+#nom, #ouv, #ferm{
+width: 300px; 
+}
+#ferm{
+bottom: 1px;
+}

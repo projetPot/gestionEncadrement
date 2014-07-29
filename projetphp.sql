@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 3.1.3.1
 -- http://www.phpmyadmin.net
---
+-- dddddddddddddddddddddddddddddddddddddddddddddd
 -- Serveur: localhost
 -- Généré le : Mer 23 Juillet 2014 à 20:54
 -- Version du serveur: 5.1.33

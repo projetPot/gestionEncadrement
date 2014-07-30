@@ -1,6 +1,4 @@
-	<?php
 
-	?>
 	<link rel="stylesheet" href="../style/index.css" />
 	<script src="../script/script.js" >  </script>
 	<script src="../script/jquery.js" >  </script>
@@ -22,7 +20,7 @@
 			</ul>
 			
 			
-			<img src="../images/iut-logo.jpg" alt="logo de l'iut de Douala" width="220" height="150" style="float: right; margin-right: 30px; margin-top: 20px;">
+			<img src="../images/iut-logo.jpg" alt="logo de l'iut de Douala" width="220" height="150" style="float: right; margin-right: 30px; margin-top: 20px;" />
 			<?php 
 			
 	if (isset($_SESSION['matricule'])){

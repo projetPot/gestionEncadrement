@@ -1,8 +1,8 @@
 <footer>
-	<div  style="position: absolute; top: 430px; background-color: #CFCBCB; width: 1300px; left: -55px; margin-top: 150px;height: 50px;padding-top: 6px;  padding-left: 30px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+	<div  style="position: absolute; bottom: -30%; background-color: #CFCBCB; width: 100%; left: -55px; margin-top: 150px; height: 80px;padding-top: 6px;  padding-left: 30px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
 			
-			<u><b>NIVEAU 1  :  PROJET WEB </b></u>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Sajouguet Dassi Marcel Orleando(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp;Benhgueut Magamtcheu Doriane(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** 
+			<u><b>NIVEAU 1  :  PROJET WEB </b></u>&nbsp;&nbsp;&nbsp;&nbsp;  Sajouguet Dassi Marcel Orleando(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp;Benhgueut Magamtcheu Doriane(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** 
 			&nbsp;&nbsp;&nbsp;&nbsp; Nyobe Kendeck Armel(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp; Nkele Kingue Esther(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp;Seugue Vanessa(Fi 2)
-		<br/>   <center>supervisé par l'enseignant Mr. <b>Ayimdji Armel</b> du cour de <u>programmation Web</u> Année Académique : <u><b>2013 - 2014 </b></u></center>
+		<br />  <br /> <center>supervisé par l'enseignant Mr. <b>Ayimdji Armel</b> du cour de <u>programmation Web</u> Année Académique : <u><b>2013 - 2014 </b></u></center>
 		</div>
 	</footer>

@@ -1,10 +1,10 @@
 <?php session_start(); ?>
 <! DOCTYPE html >
-</html>
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<title>  accueil </title>
-
+	
 	</head>
 	<body>
 
@@ -64,9 +64,9 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matricule = '$mat' OR
 	}
 			?>
 		
-		<nav style=" position: absolute; right: 31%;" >
+		<div id="nav" style="" >
 			<div id="presentation" OnClick="echo 'bonjour';" > <center> PRESENTATION DE L'IUT DE DOUALA </center> </div>
-			<div style="background-color: #EEECEC; width: 90%; padding: 8px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+			<div style="background-color: #EEECEC; width: 99%; padding: 8px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			Bienvenu à l'IUT(Institut Universitaire de Technologies) de Douala. Cet institut forme en cycle 
 			BTS(Brevet de Technicien Superieur), en DUT(Diplome Universitaire de Technologie) et en Licence technologique. dans les plates-formes suivantes :<br/>
@@ -74,10 +74,10 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matricule = '$mat' OR
 			&nbsp;&nbsp;&nbsp;&nbsp;** PFTI (Plate-Forme des Technologies Idustrielles) .<br/>
 			&nbsp;&nbsp;&nbsp;&nbsp;** PFTT (Plate-Forme des Technologies du Tertiaire) .
 			</div>
-		</nav>
-		<img src="../images/student1.jpg" style="float: right; margin-top: 50px;">
-		<img src="../images/teacher.jpg" style="float: left; margin-top: 50px; margin-left: 100px;  width: 150px;">
-		<img src="../images/iut2.jpg" style="position: absolute; top: 490px; left: 270px;">
+		</div>
+		<img src="../images/student1.jpg" style="float: right; margin-top: -180px;" />
+		<img src="../images/teacher.jpg" style="float: left; margin-top: -180px; margin-left: 100px;  width: 150px;" />
+		<img src="../images/iut2.jpg" width="1000" style="position: absolute; top: 60%; left: 170px;" />
 		
 		<script language="JavaScript" type="text/JavaScript">
 			var urls;
@@ -92,11 +92,9 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matricule = '$mat' OR
 			}
 
 		</script>
-		<div id="bloc">                              	
-		  <?php //include('footer.php'); ?>
-		</div>
 		
-		<table style="position: absolute; top: 610px; right: 55px;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+		
+		<table style="position: absolute; top: 80%; right: 50%;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
 		
 			<tr> 
 								<td width="400px">	<b>Comment utiliser toute les fonctionnalités de ce site web  : utilisateurs</b><br/>
@@ -105,8 +103,6 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matricule = '$mat' OR
 								&nbsp;&nbsp;&nbsp;&nbsp;** Puis connecter vous via l'onglet Connexion situé en haut à gauche	pour acceder à votre espace personnel .
 												
 								</td> 
-
-
 								
 								
 								<td width="400">	<b>Comment se Connecter dans son compte : étudiants ou Enseignants</b><br/>

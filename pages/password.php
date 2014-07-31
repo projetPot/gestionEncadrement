@@ -10,7 +10,7 @@
 		<?php include('header.php'); ?>
 		<center>
 				<div style=" width: 50%; border: 1px solid blue; background-color: #EEECEC;">
-				<div id="leg" style=" width: 100%; heigth: 10px;"> CHANGE PASSWORD </div>
+				<div class="leg" style=" width: 100%; heigth: 10px;"> CHANGE PASSWORD </div>
 				<form method="post" action="update_password.php">
 					<table>
 						<tr> 

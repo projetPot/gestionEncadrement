@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<! DOCTYPE html >
+<! doctype html >
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -17,14 +17,14 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matriculeEns = '$mat'
 
 				
 				if($aff = $rdv->fetch()=='0'){
-				echo "<div style=' width: 400px; background-color: rgb(238, 236, 236); height: 200px; overflow: auto; position: fixed; top: 150px; right: 10px;'>";
+				echo "<div class = 'ren_vous'>";
 				
 					echo " VOUS N'AVEZ AUCUN RENDEZ-VOUS EN COURS";
 					echo "</div>";
 					}
 				else{
-				echo "<div style=' width: 400px; background-color: rgb(238, 236, 236); height: 200px; overflow: auto; position: fixed; top: 150px; right: 10px; '>";
-				echo " <div style=' width: 100%; height: 10%; background-color: blue; text-align: center; color: white; ' > VOS RENDEZ-VOUS </div>";
+				echo "<div class = 'ren_vous'>";
+				echo " <div class = 'header_rdv'> VOS RENDEZ-VOUS </div>";
 				while($aff = $rdv->fetch()){
 				$mat_etd = $aff['matricule'];
 $etud = $connection->query("SELECT nom FROM etudiant WHERE matricule = '$mat_etd'");
@@ -43,13 +43,13 @@ $rdv = $connection->query("SELECT * FROM rendez_vous WHERE matricule = '$mat' OR
 
 				
 				if($aff = $rdv->fetch()=='0'){
-					echo "<div style=' width: 400px; background-color: rgb(238, 236, 236); height: 100px; position: fixed; top: 150px; right: 10px;'>";
+					echo "<div class = 'ren_vous'>";
 					echo " VOUS N'AVEZ AUCUN RENDEZ-VOUS EN COURS";
 					echo "</div>";
 					}
 				else{
-				echo "<div style=' width: 400px; background-color: rgb(238, 236, 236); height: 200px; overflow: auto; position: fixed; top: 150px; right: 10px;'>";
-				echo " <div style=' width: 100%; height: 10%; background-color: blue; text-align: center; color: white; ' > VOS RENDEZ-VOUS </div>";
+				echo "<div class = 'ren_vous'>";
+				echo " <div class = 'header_rdv'> VOS RENDEZ-VOUS </div>";
 				while($aff = $rdv->fetch()){
 				$date1 = $aff['dateprise'];
 				$date2 = $aff['daterel'];

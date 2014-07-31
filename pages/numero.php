@@ -10,7 +10,7 @@
 		<?php include('header.php'); ?>
 		<center>
 				<div style=" width: 45%; border: 1px solid blue; background-color: #EEECEC;" >
-				<div id="leg" style=" width: 100%; heigth: 10px;"> CHANGEZ LE NUMERO </div>
+				<div class="leg" style=" width: 100%; heigth: 10px;"> CHANGEZ LE NUMERO </div>
 				<form method="post" action="update_number.php">
 					<table>
 						<tr> 

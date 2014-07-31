@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<! doctype html>
 <html>
 <head>
     <title>jQuery Animated Bar Plugin</title>

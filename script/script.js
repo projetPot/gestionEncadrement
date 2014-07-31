@@ -24,7 +24,7 @@ function num(){
 var nume = document.getElementById('numero'), ver = document.getElementById('numb');
 if(isNaN(nume.value)){
 	ver.style.color = 'red';
-	ver.value = ' entrez votre numero';
+	ver.value = 'incorrect';
 	nume.style.backgroundColor = 'gray';
 	nume.value = ' ';
 	num.focus();

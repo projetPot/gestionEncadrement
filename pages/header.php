@@ -9,7 +9,6 @@
 			<ul id="haut" >
 				<li class="top" > <a class="menu" href="index.php"> accueil </a> </li>
 				<li class="top" > <a class="menu" href="inscription.php"> inscription </a> </li>
-				<li class='top' > <a class='menu' href='contact.php'> contact </a> </li>
 				
 				<?php if(isset($_SESSION['name'])){
 					echo "<li class='top' > <a class='menu' href='messagerie.php'> messagerie </a> </li>";
@@ -17,6 +16,7 @@
 				echo "<li class='top'> <a class='menu' href='recherche.php'> recherche </a> </li>";
 				}
 				?>
+				<li class='top' > <a class='menu' href='contact.php'> contact </a> </li>
 			</ul>
 			
 			

@@ -92,7 +92,7 @@
 						<tr>
 							<th> <label for="numero"> telephone </label> </th>
 								 <td> <input type="text" placeholder="telephone" maxlength="8" name="numero" id="numero" class="text" onChange="num();"/> </td>
-							<td> <input type="text" style="border: none; background-color: #b7c4e7; font-weight: bold; width:85px;" id="numb" disabled="disabled"/> </td>
+							<td> <input type="text" style="border: none; background-color: #b7c4e7; font-weight: bold; width:60px;" id="numb" disabled="disabled"/> </td>
 						</tr>
 						<tr>
 							<th> <label for="passe"> mot de passe </label> </th>
@@ -101,7 +101,7 @@
 						<tr>
 							<th> <label for="conf"> confirmation </label> </th>
 								<td> <input type="password" placeholder="confirmation" id="comp" maxlength="36" class="text" name="conf" onBlur="verifi()"  onkeydown="verifi()"/> </td>
-								<td> <input type="text" style="border: none; background-color: #b7c4e7; font-weight: bold; width:85px;" id="verif" disabled="disabled"/> </td>
+								<td> <input type="text" style="border: none; background-color: #b7c4e7; font-weight: bold; width:60px;" id="verif" disabled="disabled"/> </td>
 						</tr>
 						<tr>
 							<th> <label for="foto">photo </label> </th>

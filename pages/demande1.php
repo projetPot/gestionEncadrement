@@ -18,13 +18,10 @@ $proposeur = $_GET['matricule'];
 				<p> CHOISIR UN DOMAINE D'ENCADREMENT </p>
 			<?php echo '<form method=\'post\' action=\'demande.php?proposeur='.$proposeur.'\' >'; ?>
 				<select name="domaine" >
-					<option> stage </option>
-					<option> informatique </option>
-					<option> electricité </option>
-					<option> reseau et telecommunication </option>
-					<option> mecanique </option>
-					<option> physique </option>
-				</select>
+					<option> Stage </option>
+					<option> Projet tutoré </option>
+					<option> Memoire de licence </option>
+				</select> <br /><br /><br /><br />
 				<input type="submit" class="submit" value="OK" />
 			</form>
 		</center>

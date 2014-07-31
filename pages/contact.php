@@ -2,7 +2,7 @@
 <! doctype html>
 <html>
 <head>
-    <title>jQuery Animated Bar Plugin</title>
+    <title>Les réalisateurs de l'application</title>
     <link href="../style/demo.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../style/jqbar.css" />
 </head>

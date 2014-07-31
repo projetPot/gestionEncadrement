@@ -88,7 +88,7 @@ position: absolute;
 bottom: 0px;
 } */
 
-footer div span center, .leg, #tt, #presentation, #ferm, #ouv, #setting, #titre_recherche,#head_rdv{
+footer div span center, .leg, #tt, #presentation, #ferm, #ouv, #setting, #titre_recherche,#head_rdv, .header_rdv{
 
 	background: -moz-linear-gradient(#1F91F2, #034768, #034768, #3396F3);
 	background: -webkit-linear-gradient(#1F91F2, #034768, #034768, #3396F3);
@@ -295,14 +295,12 @@ background-color: rgb(238, 236, 236);
 height: 200px; 
 overflow: auto; 
 position: absolute;
-top: 700px; 
+top: 680px; 
 right: 10px;
 }
 
 .header_rdv{
 width: 100%; 
-height: 10%; 
-background-color: blue; 
+height: 15%; 
 text-align: center; 
-color: white;
 }

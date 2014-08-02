@@ -46,6 +46,7 @@ $encadre = $connection->query($req4);
 				while($aff = $etudiant->fetch()){
 					echo '<tr> <td class=\'search_student\'> <img width=50 src=\'../avatar/'.$aff['avatar'].'\'/> </td> <td class=\'search_student\'>'.$aff['nom'].'</td> <td class=\'search_student\' >'.$aff['prenom'].'</td> <td class=\'search_student\' >'.$aff['filiere'].' </td> </tr>';
 					}
+				$etudiant->closeCursor();
 					
 			?>
 		</table>
@@ -64,8 +65,9 @@ $encadre = $connection->query($req4);
 						}
 					else{
 						echo '</td> </tr>';
+						}
 					}
-					}
+				$non_encadre->closeCursor();
 			?>
 		</table>
 		
@@ -83,8 +85,9 @@ $encadre = $connection->query($req4);
 						}
 					else{
 						echo '</td> </tr>';
+						}
 					}
-					}
+				$enseignant->closeCursor();
 			?>
 		</table>
 		<table id="4" class="liste_etudiant">
@@ -99,6 +102,7 @@ $encadre = $connection->query($req4);
 				while($aff = $encadre->fetch()){
 					echo '<tr> <td class=\'search_student\'> <img width=50 src=\'../avatar/'.$aff['avatar'].'\'/> </td> <td class=\'search_student\'>'.$aff['nom'].'</td> <td class=\'search_student\' >'.$aff['prenom'].' </td> <td class=\'search_student\' >'.$aff['filiere'].' </td> <td class=\'search_student\' > <img width=50 src=\'../avatar/'.$aff['photo'].'\'/> <br /> M.'.$aff['encadreur'].'</td> </tr>';
 					}
+				$encadre->closeCursor();
 			?>
 		</table>
 	</body>

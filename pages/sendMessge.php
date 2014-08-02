@@ -2,17 +2,7 @@
 
 session_start();
 
-try
-{
-$connection = new PDO('mysql:host=localhost;dbname=projetphp','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-//on essai de se connecter à la base de données laplage préalablement créée.
-
-catch(Exception $e)
-{
-die('erreur'.$e->getMessage());
-//si la connection echoue, on affiche un message d'erreur
-}
+include('db.php');
 
 $nom = $_SESSION['name'];
 $desti = $_GET['receiveUser'];
@@ -26,8 +16,8 @@ $inscrit -> execute(array(
 'destinataire' => $nom,
 'content' =>  $textToSend
 
-// 'contenu' => $console
 ));
 
+$inscrit->closeCursor();
 ?>
 

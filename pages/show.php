@@ -19,6 +19,8 @@ $req = $connection->prepare("UPDATE $fonction SET connected = :con WHERE matricu
 		'nom' => $mat
 		)) or die ('erreur');
 		}
+		
 $_SESSION['connect'] = 1;
+$req->closeCursor();
 header('location: index.php');
 ?>

@@ -29,7 +29,7 @@ while($result1 = $list_nom->fetch()){
 $req3 = "INSERT INTO rendez_vous VALUES('$mat','$trouv',NOW(),'$date','$objet','')";
 
 $rdv = $connection->query($req3);
-
+$rdv->closeCursor();
 header('location: rendez_vous.php');
 
 

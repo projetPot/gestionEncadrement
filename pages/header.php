@@ -36,6 +36,7 @@
 					if($nb_rdv[0] != '0'){
 						echo " <a href='liste_rendez_vous.php' title='mes rendez_vous' > <div style=' position: absolute; top: 120px; right: 50%; width: 180px; height: 50px; border-radius: 5px; background-color: pink; font-weight: bold; text-align: center; '> vous avez $nb_rdv[0] nouveaux rendez-vous </div> </a>";
 						}
+						$rdv->closeCursor();
 						}
 					 ?>
 		</p>

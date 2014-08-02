@@ -26,6 +26,7 @@ $req->execute(array(
 ));
 }
 session_destroy();
+$req->closeCursor();
 //puis on redirige vers la page d'accueil du site.
 header('location: index.php');
 ?>

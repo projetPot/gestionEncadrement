@@ -1,4 +1,6 @@
 <?php
+//deconnection de l'utilisateur lorsqu'il change la photo de profil
+
 include ('db.php');
 
 $mat = $_GET['matricule'];
@@ -21,9 +23,6 @@ $req2->execute(array(
 
 if($req2){
 
-?>
-<script> alert('modification reussie');</script>
-<?php
 $req2->closeCursor();
 header("location: special_connect.php?nom=$nom&photo=$photo&matricule=$mat&con='1'&fonction=$fonction");
 }

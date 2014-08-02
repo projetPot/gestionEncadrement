@@ -9,26 +9,32 @@ $number = $_POST['ancien'];
 $update = $_POST['nouveau'];
 
 if($fonction == 'enseignant'){
-$req1 = "SELECT adresse FROM enseignant WHERE matriculeEns = '$mat';";
-$req2 = $connection->prepare('UPDATE enseignant SET adresse = :passe WHERE matriculeEns = :nom');
-}
+	$req1 = "SELECT adresse FROM enseignant WHERE matriculeEns = '$mat';";
+	$req2 = $connection->prepare('UPDATE enseignant SET adresse = :passe WHERE matriculeEns = :nom');
+	}
+	
 else{
-$req1 = "SELECT numeroTel FROM etudiant WHERE matricule = '$mat';";
-$req2 = $connection->prepare('UPDATE etudiant SET numeroTel = :passe WHERE matricule = :nom');
-}
+	$req1 = "SELECT numeroTel FROM etudiant WHERE matricule = '$mat';";
+	$req2 = $connection->prepare('UPDATE etudiant SET numeroTel = :passe WHERE matricule = :nom');
+	}
+	
 $result = $connection->query($req1);
 $aff = $result->fetch();
 
 if(!in_array($number,$aff)){
-?>
-<script> alert('ancien numero non valide'); location = 'update.php?code=numero';</script>
-<?php
-}
+	?>
+	<script> alert('ancien numero non valide'); location = 'update.php?code=numero';</script>
+	<?php
+	}	
+	
 else{ 
-$req2->execute(array(
-'passe' => $update,
-'nom' => $mat
-));
-}
+	$req2->execute(array(
+	'passe' => $update,
+	'nom' => $mat
+	));
+	}
+
+$req1->closeCursor();
+$req2->closeCursor();
 ?>
 <script> alert('modification reussie'); location = 'index.php';</script>

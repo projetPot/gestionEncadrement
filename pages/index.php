@@ -27,17 +27,38 @@
 		<img src="../images/iut2.jpg" width="1000" style="position: absolute; top: 60%; left: 170px;" />
 		
 		<script language="JavaScript" type="text/JavaScript">
-			var urls;
-			function animate(pos) {
-			  pos %= urls.length;
-			  document.images["animation"].src = urls[pos];
-			  window.setTimeout("animate(" + (pos + 1) + ");", 5000)
+			(function() { 
+	var storage = {}; 
+	function addEvent(element, event, func) { 
+		if (element.attachEvent) {
+			element.attachEvent('on' + event, func);
+		} else {
+			element.addEventListener(event, func, true);
+		}
+	}
+	function init() { 
+		var elements = document.getElementsByTagName('div'), nbre = elements.length;
+		for(var i=0; i<nbre; i++){
+			if(elements[i].className == 'ren_vous'){
+			addEvent(elements[i], 'mousedown', function(e) {
+			var s = storage; 
+			this.style.zIndex = '100';
+			s['target'] = e.target || event.srcElement; 
+			s['offsetX'] = e.clientX - s.target.offsetLeft;
+			s['offsetY'] = e.clientY - s.target.offsetTop;
+			});
 			}
-			window.onload = function() {
-			  urls = new Array("../images/img.jpg", "../images/vert.jpg", "../images/yellow.jpg", "../images/blue.jpg");
-			  animate(0);
+			addEvent(elements[i], 'mouseup', function() {storage = {};});
 			}
-
+		
+		addEvent(document, 'mousemove', function(e) {
+		var target = storage.target; 
+		if (target) {target.style.top = e.clientY - storage['offsetY'] +'px'; 
+		target.style.left = e.clientX - storage['offsetX'] +'px';
+		}});
+	}
+	init(); 
+})();
 		</script>
 		
 		
@@ -68,13 +89,6 @@
 			</tr>
 		</table>
 		<br/><br/>
-	<!--	<div  style="position: absolute; top: 830px; background-color: #CFCBCB; width: 1500px; padding-top: 6px;  padding-left: 30px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
-			
-			<u><b>NIVEAU 1  :  PROJET WEB </b></u>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Sajouguet Dassi Marcel Orleando(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp;Benhhgueut Magamtcheu Doriane(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** 
-			&nbsp;&nbsp;&nbsp;&nbsp; Nyobe Kendeck Armel(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp; Nkele Kingue Esther(Fi 1)&nbsp;&nbsp;&nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp;Seugue Vanessa(Fi 2)
-		<br/>   <center>supervisé par l'enseignant Mr. <b>Ayimdji Armel</b> du cour de <u>programmation Web</u> Année Académique : <u><b>2013 - 2014 </b></u></center>
-		</div>
-		-->
 	<?php include('footer.php'); ?>
 	</body>
 </html>

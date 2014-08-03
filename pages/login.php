@@ -41,7 +41,7 @@
 				));
 				$verification = true;
 				$_SESSION['fonction'] = 'etudiant';
-				$req_>closeCursor();
+				$req->closeCursor();
 				break;
 				}
 			}

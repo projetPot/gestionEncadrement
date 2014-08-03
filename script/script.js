@@ -66,17 +66,10 @@ else{ foto1.style.display = 'none';}
 }
 
 function les_listes(liste1, liste2, liste3, liste4){
-
-	// var demande = document.getElementsByName('demande');
-	
 	document.getElementById(liste1).style.display = 'block';
 	document.getElementById(liste2).style.display = 'none';
 	document.getElementById(liste3).style.display = 'none';
 	document.getElementById(liste4).style.display = 'none';
-	// for(i=0; i< demande.length; i++){
-	// demande[i].onclick = function(){location = '../pages/demande.php';};
-	// }
-	
 	}
 	
 function imageRecherche1(){

@@ -54,6 +54,7 @@ session_start();
 			<DIV class="mini_bloc2"> <!-- UTILISATEURS CONNECTES SUR LE SITE WEB -->  </DIV>
 			
 			<img src="../images/ok.PNG" id="ok-send-message" />
+			<?php include('footer.php'); ?>
 	</body>
 </html>
 		

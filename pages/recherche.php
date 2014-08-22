@@ -105,5 +105,6 @@ $encadre = $connection->query($req4);
 				$encadre->closeCursor();
 			?>
 		</table>
+		<?php include('footer.php'); ?>
 	</body>
 </html>	

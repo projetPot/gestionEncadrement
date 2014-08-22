@@ -24,7 +24,7 @@
 		</div>
 		<img src="../images/student1.jpg" style="float: right; margin-top: -180px;" />
 		<img src="../images/teacher.jpg" style="float: left; margin-top: -180px; margin-left: 100px;  width: 150px;" />
-		<img src="../images/iut2.jpg" width="1000" style="position: absolute; top: 60%; left: 170px;" />
+		<img src="../images/iut2.jpg" width="1000" style="position: relative; top: 5%; right: 3%;"/>
 		
 		<script language="JavaScript" type="text/JavaScript">
 			(function() { 
@@ -62,7 +62,7 @@
 		</script>
 		
 		
-		<table style="position: absolute; top: 80%; right: 50%;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+		<table style="position: relative; top: 7%; left: 5%;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
 		
 			<tr> 
 								<td width="400px">	<b>Comment utiliser toute les fonctionnalités de ce site web  : utilisateurs</b><br/>

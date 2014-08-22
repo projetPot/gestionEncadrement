@@ -99,7 +99,8 @@ footer div span center, .leg, #tt, #presentation, #ferm, #ouv, #setting, #titre_
 	-webkit-border-radius: 7px 7px 0 0;
 	border-radius: 7px 7px 0 0; */
 	color: #fff;	
-font-size: 20px; font-weight: bold; font-family: 'Agency FB';	
+	font-size: 20px; font-weight: bold; font-family: 'Agency FB';	
+	z-index: 900;
 	/* text-align:  */
 	
 }
@@ -271,7 +272,7 @@ min-height:500px;
 min-width:600px;
 position: absolute;
 left: 20px;
-top: 400px;
+top: 300px;
 z-index: 900px;
 }
 

@@ -153,15 +153,19 @@ function imageRecherche1(){
 							$('.displayInstantInstant').html(data);     
 					  },
 					  error:function(){
-						  $(".displayInstantInstant").html('There was an error updating the settings');
+						  $(".displayInstantInstant").html('<center> <img src="../images/ajax-loader.gif" height="150" width="150" /> </center>');
 					  }   
 					});  
 					
+					
+			}	
+			
+			function scroolNewMessage(){
 					var footerSet = $('.contentSend:last').position(),
 					position    = $('.displayInstantInstant').scrollTop() + footerSet.top + 60;
 					
 					$('.displayInstantInstant').scrollTop(position);
-			}	
+			}
 
 			setInterval(discussionInstantannee, 1000);
 
@@ -173,7 +177,7 @@ function imageRecherche1(){
 							$('.mini_bloc2').html(data);     
 					  },
 					  error:function(){
-						  $(".mini_bloc2").html('There was an error updating the list of user connected');
+						  $(".mini_bloc2").html('<center> <img src="../images/ajax-loader-2.gif" height="80" width="80" /> </center>');
 					  }   
 					});  
 			}	
@@ -184,6 +188,8 @@ function imageRecherche1(){
 				console.log("envoi du message a l'utilisateur");
 				var receiveUser1 = document.getElementById('user');
 				var receiveUser = receiveUser1.innerHTML;
+				
+				scroolNewMessage();
 
 				$.ajax({
 					url: "sendMessge.php?textToSend=" + textToSend + "&receiveUser=" + receiveUser,
@@ -197,6 +203,6 @@ function imageRecherche1(){
 				});
 				
 				document.s.messageInstant.value = "";
-				$('#ok-send-message').fadeIn(2000).fadeOut(2000);
+				$('#ok-send-message').css("position", "absolute").css("top", "85%").css("right" ,"30%").fadeIn(2000).fadeOut(2000);
 
 			}

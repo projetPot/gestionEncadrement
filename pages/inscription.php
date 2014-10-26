@@ -36,7 +36,7 @@
 		</table>
 		<center>
 			<div style=" width: 50%; border: 1px solid #BBB0FB; background-color: #EEECEC; margin-left: 300px;" id="cadre">
-				<div class="leg" style=" width: 100%; heigth: 10px;"> INSCRIPTION </div>
+				<div class="leg" style=" width: 100%; heigth: 10px; background: 034768;"> INSCRIPTION </div>
 				<form method="post" action="envoi.php" enctype="multipart/form-data" style="z-index: 800px;">
 					<div id="blo">
 					<table>

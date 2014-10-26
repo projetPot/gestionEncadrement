@@ -59,7 +59,7 @@ border-radius: 5px;
 }
 
 .userSend{
-border: 2px solid #BBB0FB;
+border: 1px solid #BBB0FB;
 background-color:rgb(238, 236, 236);
 float: left;
 padding-right: 2px;
@@ -78,13 +78,12 @@ margin-bottom: -20px;
 }
 
 .contentSend{
-margin-left: 65px;
+margin-left: 80px;
 width: 70%;
-border: 2px solid skyblue;
+border: 1px solid skyblue;
 margin-top: 3px;
 margin-bottom: -20px;
-border-radius: 5px;
-box-shadow: 2px 1px 0px rgb(187, 176, 251);
+box-shadow: 1.5px 0.5px 0px rgb(187, 176, 251);
 }
 
 .displayInstantInstant{
@@ -98,13 +97,12 @@ font-weight: bold;
 
 .mini_bloc2 {
     width: 250px;
-    min-height: 100px;
+    min-height: 250px;
     border-radius: 0px 0px 5px 5px;
-    
     background-color: #EEECEC;
-   position: fixed;
-   left: 10px;
-   top: 450px;
+    position: absolute;
+    left: 10px;
+    bottom: 57px;
 	border: 1px solid blue;
 }
 
@@ -125,7 +123,7 @@ cursor: pointer;
 }
 
 #nom, #ouv, #ferm{
-width: 300px; 
+width: 320px; 
 }
 #ferm{
 bottom: 1px;

@@ -26,19 +26,20 @@ session_start();
 		?>
 		
 		<div id="nom" style="visibility: hidden;" >
-			<div  id="ferm" style="height: 25px; " > 
+			<div  id="ferm" style="height: 25px; background: 034768;" > 
 				<?php echo '<img style=\' width: 30px; height: 100%;\' src=../avatar/'.$_SESSION['photo'].' /> <span style=\'position: absolute; top: 1px; left: 15%; \' > <b>'.$_SESSION['name'] ?> 
 				& <span id="user">user</span></span> </b> 
 				<img src="../images/bas.png" width="20" style="position: absolute; right: 20px;" onclick="masq();" />
 				<img src="../images/close.png" style="position: absolute; right: 0px;" onclick="arret();" /> 
 			</div>
 		  
-				<div class="displayInstantInstant"> </div> 
+				<div class="displayInstantInstant" style="background: 034768;"> </div> 
 									 
 					<div class="formInstant">  
 						<form name="s">
 							<textarea class="textInstant" name="messageInstant" placeholder="my new message to send"></textarea><br/><br/>
 							<input class="ss" type="button" onclick="sendIT(s.messageInstant.value);" name="sendInstant" value="send" />
+							<img src="../images/ok.PNG" id="ok-send-message"/>
 						</form>								
 					 
 					</div>
@@ -50,11 +51,13 @@ session_start();
 			<img src="../images/haut.png" width="20" style="position: absolute; right: 20px;" onclick="aff();" />
 			<img src="../images/close.png" style="position: absolute; right: 0px;" onclick="arret();" />
 		</p>
-		<div id="triangle"></div>
-			<DIV class="mini_bloc2"> <!-- UTILISATEURS CONNECTES SUR LE SITE WEB -->  </DIV>
+		
+		<DIV class="mini_bloc2"> <!-- UTILISATEURS CONNECTES SUR LE SITE WEB -->  </DIV>
 			
-			<img src="../images/ok.PNG" id="ok-send-message" />
-			<?php include('footer.php'); ?>
+		
+	
+	<?php include('footer.php'); ?>
+
 	</body>
 </html>
 		

@@ -4,6 +4,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>  accueil </title>
+		
+		 
 	
 	</head>
 	<body>
@@ -11,20 +13,33 @@
 		<?php include('header.php'); ?>
 		<?php  if(isset($_SESSION['matricule'])) include('infos.php'); ?>
 		
-		<div id="nav" style="" >
-			<div id="presentation" OnClick="echo 'bonjour';" > <center> PRESENTATION DE L'IUT DE DOUALA </center> </div>
-			<div style="background-color: #EEECEC; width: 99%; padding: 8px; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Bienvenu à l'IUT(Institut Universitaire de Technologies) de Douala. Cet institut forme en cycle 
-			BTS(Brevet de Technicien Superieur), en DUT(Diplome Universitaire de Technologie) et en Licence technologique. dans les plates-formes suivantes :<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;** PFTIN (Plate-Forme des Technologies de l'Information & du Numérique).<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;** PFTI (Plate-Forme des Technologies Idustrielles) .<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;** PFTT (Plate-Forme des Technologies du Tertiaire) .
-			</div>
-		</div>
-		<img src="../images/student1.jpg" style="float: right; margin-top: -180px;" />
-		<img src="../images/teacher.jpg" style="float: left; margin-top: -180px; margin-left: 100px;  width: 150px;" />
-		<img src="../images/iut2.jpg" width="1000" style="position: relative; top: 5%; right: 3%;"/>
+		<table  width="80%"  align="center" >
+			<tr>
+
+		<td align="center" style="vertical-align: bottom;"><img src="../images/student1.jpg" />  </td>
+
+		<td align="center">
+			<div id="nav">
+				<div id="presentation" style="background: 034768;" onclick="alert('bonjour');" > <center> PRESENTATION DE L'IUT DE DOUALA </center> </div>
+				<div style="background-color: #EEECEC; width: 99%; font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Bienvenu à l'IUT(Institut Universitaire de Technologies) de Douala. Cet institut forme en cycle 
+				BTS(Brevet de Technicien Superieur), en DUT(Diplome Universitaire de Technologie) et en Licence technologique. dans les plates-formes suivantes :<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;** PFTIN (Plate-Forme des Technologies de l'Information & du Numérique).<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;** PFTI (Plate-Forme des Technologies Idustrielles) .<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;** PFTT (Plate-Forme des Technologies du Tertiaire) .
+				</div>
+			</div> 
+		</td>
+
+		<!--  td></td -->
+		
+		<td align="center" style="vertical-align: bottom;">		<img src="../images/teacher.jpg"  />	 </td>
+		</tr>
+		</table>
+
+
+		<img src="../images/iut2.jpg" width="900" style="position: relative; top: 9%; left: 18%;"/>
 		
 		<script language="JavaScript" type="text/JavaScript">
 			(function() { 
@@ -62,7 +77,7 @@
 		</script>
 		
 		
-		<table style="position: relative; top: 7%; left: 5%;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
+		<table style="position: relative; top: 17%; left: 5%;font-size: 20px; font-weight: normal; font-family: 'Agency FB';">
 		
 			<tr> 
 								<td width="400px">	<b>Comment utiliser toute les fonctionnalités de ce site web  : utilisateurs</b><br/>
@@ -88,7 +103,7 @@
 								</td> 
 			</tr>
 		</table>
-		<br/><br/>
+		
 	<?php include('footer.php'); ?>
 	</body>
 </html>

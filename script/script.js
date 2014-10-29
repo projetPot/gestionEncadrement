@@ -1,4 +1,35 @@
 
+// one main function to handle all errors in register form 
+
+function formValidation(){
+
+var email = document.getElementById('email');
+
+if(emailValidation(email, "Please enter a valid email address like : \n \t \t  *iut@univ-douala.cm*")){
+
+	return true;
+
+}
+
+verifi();
+
+return false;
+// onBlur="verifi()"  onkeydown="verifi()"
+}
+
+
+function emailValidation(inputEmail, alertMsg){
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(inputEmail.value.match(emailExp)){
+		return true;
+	}else{
+		alert(alertMsg); //this segment displays the validation rule for email
+		inputEmail.focus();
+		return false;
+	}
+}
+
+
 function show(){ document.getElementById('con').style.visibility = 'visible';}
 
 function hidde(){ document.getElementById('con').style.visibility = 'hidden';}
@@ -37,16 +68,18 @@ else{
 	
 function verifi(){
 	var pass1 = document.getElementById('passe'),ecrit = document.getElementById('verif'), pass2 = document.getElementById('comp');
-	
+	// we use return false;  because when error appear the form will be not send
 	if( pass1.value =="" && pass2.value ==""){
 		ecrit.value = ' ';
 		pass2.style.backgroundColor = 'white';
+		pass1.focus();
+		return false;
 		}
-	else if(pass1.value !== pass2.value){
+	else if(pass1.value != pass2.value){
 		ecrit.style.color = 'red';
 		ecrit.value = 'incorrect';
 		pass2.style.backgroundColor = 'gray';
-
+		return false;
 		}
 	else{
 		ecrit.style.color = 'green';
